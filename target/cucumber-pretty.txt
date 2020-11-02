@@ -1,0 +1,15 @@
+Feature: Regions and Wines list
+
+  @API
+  Scenario: I want to get a list of all Regions           [90m# src/test/resources/features/RegionsAndWines.feature:24[0m
+    [32mGiven [0m[32mI have a list of Regions created in my database[0m [90m# ApiSteps.iHaveAListOfRegionsCreatedInMyDatabase()[0m
+    [32mWhen [0m[32mI call the [0m[32m[1mGET[0m[32m “Regions - All” endpoint[0m          [90m# ApiSteps.iCallTheGetRegionsAllEndpoint(String)[0m
+    [32mThen [0m[32mI get a [0m[32m[1m200[0m[32m response[0m                             [90m# ApiSteps.iGetAResponse(int)[0m
+    [32mAnd [0m[32mI get the correct list of Regions[0m                 [90m# ApiSteps.iGetTheCorrectListOfRegions()[0m
+
+  @API
+  Scenario: I want to add a Likes to a Wine                                        [90m# src/test/resources/features/RegionsAndWines.feature:31[0m
+    [32mGiven [0m[32mI have a Wine created in my database[0m                                     [90m# ApiSteps.iHaveAWineCreatedInMyDatabase()[0m
+    [32mWhen [0m[32mI call the [0m[32m[1mPOST[0m[32m “Wines - Like” endpoint with a valid Id and valid Payload[0m [90m# ApiSteps.iCallTheWinesLikeEndpointWithAValidIdAndPayload(String)[0m
+    [32mThen [0m[32mI get a [0m[32m[1m200[0m[32m response[0m                                                      [90m# ApiSteps.iGetAResponse(int)[0m
+    [32mAnd [0m[32mthe selected option is saved[0m                                               [90m# ApiSteps.theSelectedOptionIsSaved()[0m

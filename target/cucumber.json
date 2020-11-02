@@ -1,0 +1,187 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-21T14:48:22.910Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1324437490,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.before()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "I want to get a list of all Regions",
+        "description": "",
+        "id": "regions-and-wines-list;i-want-to-get-a-list-of-all-regions",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1768854,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I have a list of Regions created in my database",
+            "match": {
+              "location": "ApiSteps.iHaveAListOfRegionsCreatedInMyDatabase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 543553431,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I call the GET “Regions - All” endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 11
+                }
+              ],
+              "location": "ApiSteps.iCallTheGetRegionsAllEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1951641,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I get a 200 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 8
+                }
+              ],
+              "location": "ApiSteps.iGetAResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1151988,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I get the correct list of Regions",
+            "match": {
+              "location": "ApiSteps.iGetTheCorrectListOfRegions()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-21T14:48:24.806Z",
+        "before": [
+          {
+            "result": {
+              "duration": 304946,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.before()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "I want to add a Likes to a Wine",
+        "description": "",
+        "id": "regions-and-wines-list;i-want-to-add-a-likes-to-a-wine",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 215915879,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I have a Wine created in my database",
+            "match": {
+              "location": "ApiSteps.iHaveAWineCreatedInMyDatabase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 236732815,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I call the POST “Wines - Like” endpoint with a valid Id and valid Payload",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 11
+                }
+              ],
+              "location": "ApiSteps.iCallTheWinesLikeEndpointWithAValidIdAndPayload(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 777024,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I get a 200 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 8
+                }
+              ],
+              "location": "ApiSteps.iGetAResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 205437167,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the selected option is saved",
+            "match": {
+              "location": "ApiSteps.theSelectedOptionIsSaved()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      }
+    ],
+    "name": "Regions and Wines list",
+    "description": "",
+    "id": "regions-and-wines-list",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/RegionsAndWines.feature",
+    "tags": []
+  }
+]

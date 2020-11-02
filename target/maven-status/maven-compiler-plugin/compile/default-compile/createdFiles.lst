@@ -1,0 +1,9 @@
+data/RegionsData.class
+data/CommentData.class
+helpers/ApiCalls.class
+data/WineData.class
+helpers/SharedDriver$1.class
+helpers/ResponsesProcessor.class
+helpers/BrowserInteraction.class
+helpers/SharedDriver.class
+pages/MainPage.class

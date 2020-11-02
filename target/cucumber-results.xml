@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="2.556457">
+<testcase classname="Regions and Wines list" name="I want to get a list of all Regions" time="1.892767">
+<system-out><![CDATA[Given I have a list of Regions created in my database.......................passed
+When I call the GET “Regions - All” endpoint................................passed
+Then I get a 200 response...................................................passed
+And I get the correct list of Regions.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regions and Wines list" name="I want to add a Likes to a Wine" time="0.66369">
+<system-out><![CDATA[Given I have a Wine created in my database..................................passed
+When I call the POST “Wines - Like” endpoint with a valid Id and valid Payload.passed
+Then I get a 200 response...................................................passed
+And the selected option is saved............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

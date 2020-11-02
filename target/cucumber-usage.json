@@ -1,0 +1,132 @@
+[
+  {
+    "source": "I have a list of Regions created in my database",
+    "steps": [
+      {
+        "name": "I have a list of Regions created in my database",
+        "aggregatedDurations": {
+          "median": 0.001768854,
+          "average": 0.001768854
+        },
+        "durations": [
+          {
+            "duration": 0.001768854,
+            "location": "file:src/test/resources/features/RegionsAndWines.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I call the ([^\"]*) “Regions - All” endpoint",
+    "steps": [
+      {
+        "name": "I call the GET “Regions - All” endpoint",
+        "aggregatedDurations": {
+          "median": 0.543553431,
+          "average": 0.543553431
+        },
+        "durations": [
+          {
+            "duration": 0.543553431,
+            "location": "file:src/test/resources/features/RegionsAndWines.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I get a ([^\"]*) response",
+    "steps": [
+      {
+        "name": "I get a 200 response",
+        "aggregatedDurations": {
+          "median": 0.001364333,
+          "average": 0.001364333
+        },
+        "durations": [
+          {
+            "duration": 0.001951641,
+            "location": "file:src/test/resources/features/RegionsAndWines.feature:27"
+          },
+          {
+            "duration": 0.000777024,
+            "location": "file:src/test/resources/features/RegionsAndWines.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I get the correct list of Regions",
+    "steps": [
+      {
+        "name": "I get the correct list of Regions",
+        "aggregatedDurations": {
+          "median": 0.001151988,
+          "average": 0.001151988
+        },
+        "durations": [
+          {
+            "duration": 0.001151988,
+            "location": "file:src/test/resources/features/RegionsAndWines.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have a Wine created in my database",
+    "steps": [
+      {
+        "name": "I have a Wine created in my database",
+        "aggregatedDurations": {
+          "median": 0.215915879,
+          "average": 0.215915879
+        },
+        "durations": [
+          {
+            "duration": 0.215915879,
+            "location": "file:src/test/resources/features/RegionsAndWines.feature:32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I call the ([^\"]*) “Wines - Like” endpoint with a valid Id and valid Payload",
+    "steps": [
+      {
+        "name": "I call the POST “Wines - Like” endpoint with a valid Id and valid Payload",
+        "aggregatedDurations": {
+          "median": 0.236732815,
+          "average": 0.236732815
+        },
+        "durations": [
+          {
+            "duration": 0.236732815,
+            "location": "file:src/test/resources/features/RegionsAndWines.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the selected option is saved",
+    "steps": [
+      {
+        "name": "the selected option is saved",
+        "aggregatedDurations": {
+          "median": 0.205437167,
+          "average": 0.205437167
+        },
+        "durations": [
+          {
+            "duration": 0.205437167,
+            "location": "file:src/test/resources/features/RegionsAndWines.feature:35"
+          }
+        ]
+      }
+    ]
+  }
+]
